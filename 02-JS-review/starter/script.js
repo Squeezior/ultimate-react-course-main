@@ -291,3 +291,13 @@ const totalNumberOfPagesToRead = books.reduce(
   0
 );
 totalNumberOfPagesToRead;
+
+// Sort Method - mutates the array
+const y = [3, 7, 1, 9, 6];
+const sorted = y.slice().sort((a, b) => a - b); //Ascending | Slice to create a copy not to mutate the original array
+// const sorted = y.sort((a, b) => b - a); //Descending
+sorted;
+y;
+
+const sortedByPages = books.slice().sort((a, b) => a.pages - b.pages);
+sortedByPages;
