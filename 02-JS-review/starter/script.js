@@ -274,6 +274,7 @@ const essentialData = books.map((book) =>
 );
 essentialData;
 
+// Filter Method
 const longBooksWithMovie = books
   .filter((book) => book.pages > 500)
   .filter((book) => book.hasMovieAdaptation);
@@ -283,3 +284,10 @@ const adventureBooks = books
   .filter((book) => book.genres.includes('adventure'))
   .map((book) => book.title);
 adventureBooks;
+
+// Reduce Method
+const totalNumberOfPagesToRead = books.reduce(
+  (acc, curr) => acc + curr.pages,
+  0
+);
+totalNumberOfPagesToRead;
