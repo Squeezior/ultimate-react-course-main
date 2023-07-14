@@ -204,3 +204,34 @@ const summary = `${title}, a ${pages}-page long book, was written by ${author} a
   publicationDate
 )}. The book has${hasMovieAdaptation ? '' : ' not'} been adapted as a movie`;
 summary;
+
+// ********************************************************
+// Short Circuiting and Logical Operators && || ??
+// && Operator
+console.log(true && 'Some String');
+console.log(false && 'Some String');
+console.log(hasMovieAdaptation && 'This book has a movie');
+
+// falsy: 0, '', null, undefined
+console.log('Matt' && 'Some String');
+console.log(0 && 'Some String');
+console.log('' && 'Some String');
+
+// || Operator
+console.log(true || 'Some string');
+console.log(false || 'Some string');
+
+console.log(book.translations.spanish);
+
+const spanishTranslation = book.translations.spanish || 'NOT TRANSLATED';
+spanishTranslation;
+
+// || also works with falsy values - can go wrong!
+console.log(book.reviews.librarything.reviewsCount);
+const countWrong = book.reviews.librarything.reviewsCount || 'no data';
+countWrong;
+
+// Nullish Coalescent Operator
+const count = book.reviews.librarything.reviewsCount ?? 'no data';
+count;
+// Will only return a second value when the first value is null or undefined and not '' or 0;
