@@ -1,3 +1,4 @@
+/*
 const data = [
   {
     id: 1,
@@ -247,7 +248,7 @@ console.log(getTotalReviewCount(book));
 */
 // ********************************************************
 // The Array Map Method
-
+/*
 const books = getBooks();
 
 function getTotalReviewCount(book) {
@@ -322,3 +323,27 @@ const booksAfterUpdate = booksAfterDelete.map((book) =>
   book.id === 1 ? { ...book, pages: 1210 } : book
 );
 booksAfterUpdate;
+*/
+
+// ********************************************************
+// Promise Methods
+// fetch('https://jsonplaceholder.typicode.com/todos')
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));
+
+// console.log('matt');
+
+// ********************************************************
+// Async Functions, Await
+async function getTodos() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/todos');
+  const data = await res.json();
+  console.log(data);
+
+  return data;
+  // Result value of the async function is always just a promise.
+}
+
+const todos = getTodos();
+console.log(todos);
+console.log('matt');
