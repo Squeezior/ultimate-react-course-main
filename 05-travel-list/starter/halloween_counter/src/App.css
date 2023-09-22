@@ -1,0 +1,81 @@
+body {
+  background-image: url('https://images.unsplash.com/photo-1477313372947-d68a7d410e9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-position: center;
+  max-height: 1920px;
+  min-height: 640px;
+  background-repeat: no-repeat;
+}
+
+.count-headline {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.count-text {
+  color: #fff;
+  text-align: center;
+  font-size: 56px;
+  letter-spacing: 35px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.expired-notice {
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #ebebeb;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+}
+
+.expired-notice > span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: red;
+}
+
+.expired-notice > p {
+  font-size: 1.5rem;
+}
+
+.show-counter {
+  padding: 0.5rem;
+}
+
+.show-counter .countdown-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 2rem;
+  padding: 2dvb;
+  border: 1px solid #ebebeb;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.show-counter .countdown {
+  line-height: 1.25rem;
+  padding: 0 0.75rem 0 0.75rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-counter .countdown.danger {
+  color: #ff0000;
+}
+
+.show-counter .countdown > p {
+  margin: 4rem;
+}
+
+.show-counter .countdown > span {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  line-height: 1rem;
+}
